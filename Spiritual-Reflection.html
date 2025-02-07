@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spiritual Reflection - Jesus Mariscal</title>
+  <style>
+    /* Reset defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Base styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      padding-top: 70px; /* Space for fixed nav bar */
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(20, 30, 48, 0.9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    /* Logo with Stylus Icon */
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo svg {
+      width: 30px;
+      height: 30px;
+      fill: #3498db;
+      margin-right: 10px;
+    }
+    .logo a {
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+    }
+    /* Navigation links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1em;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #3498db;
+    }
+    /* Dropdown container for Pillars */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown > a::after {
+      content: " \25BE"; /* Down arrow */
+      font-size: 0.8em;
+      margin-left: 4px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: rgba(20, 30, 48, 0.95);
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      z-index: 1001;
+    }
+    .dropdown-content a {
+      color: #fff;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s ease;
+    }
+    .dropdown-content a:hover {
+      background: #3498db;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+      }
+      .nav-links {
+        margin-top: 10px;
+      }
+    }
+    /* Container Section Styling */
+    .container-section {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    /* Headings and Paragraphs */
+    h1, h3 {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #fff;
+    }
+    h3 {
+      font-size: 1.5em;
+      color: #fff;
+    }
+    p {
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+    /* Embedded Video Styling for Podcast (if needed) */
+    .video-embed {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-bottom: 20px;
+    }
+    /* Text link styling */
+    .text-link {
+      color: #3498db;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+    .text-link:hover {
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="me.html">
+            <svg viewBox="0 0 512 512">
+              <path d="M497.9 74.1L437 13.2C423.5-0.3 404.3-0.3 390.8 13.2L213.1 190.9L321.1 298.9L498.8 121.2C513.3 106.7 513.3 87.5 497.9 74.1zM200.4 220.5L56 364.9V480H171.1L315.5 335.6L200.4 220.5z"/>
+            </svg>
+            Jesus Mariscal
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="me.html">Home</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">About</a>
+          <div class="dropdown">
+            <a href="#">Pillars of My Foundation</a>
+            <div class="dropdown-content">
+              <a href="lifelong-learning.html">Lifelong Learning</a>
+              <a href="community-impact.html">Community Impact</a>
+              <a href="spiritual-reflection.html">Spiritual Reflection</a>
+              <a href="healthy-living.html">Healthy Living</a>
+              <a href="cultural-enrichment.html">Cultural Enrichment</a>
+              <a href="artistic-expression.html">Artistic Expression</a>
+              <a href="resilience.html">Resilience</a>
+              <a href="leadership.html">Leadership</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Spiritual Reflection Content Section -->
+    <div class="container-section" id="spiritual-reflection">
+      <h1>Spiritual Reflection</h1>
+      <p>
+        In the midst of life's challenges, my spiritual journey offers a sanctuary of strength and guidance. I nurture my spirit through personal prayer, meditation, and communal worship, which empower me to lead with compassion.
+      </p>
+      
+      <!-- Personal Faith and Meditation Section -->
+      <section class="content" id="personal-faith">
+        <h2>Personal Faith and Meditation</h2>
+        <p>
+          Through daily prayer and meditation, I cultivate inner peace and clarity. These practices allow me to connect with my inner self, overcome adversity, and inspire those around me.
+        </p>
+      </section>
+      
+      <!-- Community Worship and Fellowship Section -->
+      <section class="content" id="community-worship">
+        <h2>Community Worship and Fellowship</h2>
+        <p>
+          Being part of a faith community enriches my life. Through communal worship and spiritual fellowship, I deepen my understanding of unity and shared purpose, which inspires me to extend empathy and support to others.
+        </p>
+      </section>
+      
+      <!-- Real Prayer Movement Section -->
+      <section class="content" id="real-prayer">
+        <h2>Real Prayer Movement</h2>
+        <p>
+          I proudly led daily prayer sessions via Zoom as part of the Real Prayer Movement, translating those moments into public evangelizing and community outreach. Join our daily prayer session at 4 PM:
+        </p>
+        <p>
+          <a href="https://us04web.zoom.us/j/79534717147?pwd=MnpJMW1hWWtXd29zOWdpdTdPZ0QyUT09" target="_blank" class="text-link">Join the Daily Prayer Session</a>
+        </p>
+      </section>
+      
+      <!-- Deep Talks Podcast Section -->
+      <section class="content" id="deep-talks">
+        <h2>Deep Talks Podcast</h2>
+        <p>
+          I also host a podcast featuring deep conversations with special guests, exploring topics of faith, purpose, and personal growth.
+        </p>
+        <iframe class="video-embed" src="https://www.youtube.com/embed/b0lQ3dCYx10?start=51" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+          Check out more episodes on my <a href="https://www.youtube.com/channel/UCnuyivkT_HoBXDOlBGDsnIw" target="_blank" class="text-link">Podcast Channel on YouTube</a>.
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

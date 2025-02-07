@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesus Mariscal - Profile</title>
+  <style>
+    /* Reset defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Base styling: modern dark gradient background with white text */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      padding-top: 70px; /* Space for fixed nav bar */
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(20, 30, 48, 0.9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    
+    /* Logo with Stylus Icon */
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo svg {
+      width: 30px;
+      height: 30px;
+      fill: #3498db;
+      margin-right: 10px;
+    }
+    
+    .logo a {
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+    }
+    
+    /* Navigation links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1em;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: #3498db;
+    }
+    
+    /* Dropdown container for Pillars */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown > a::after {
+      content: " \25BE"; /* Down arrow */
+      font-size: 0.8em;
+      margin-left: 4px;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: rgba(20, 30, 48, 0.95);
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      z-index: 1001;
+    }
+    
+    .dropdown-content a {
+      color: #fff;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s ease;
+    }
+    
+    .dropdown-content a:hover {
+      background: #3498db;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Mobile menu adjustments */
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+      }
+      .nav-links {
+        margin-top: 10px;
+      }
+    }
+    
+    /* Centered container styling for page sections */
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Headings with a subtle text-shadow for depth */
+    h1, h3 {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      margin-bottom: 10px;
+    }
+    
+    h1 {
+      font-size: 2em;
+      color: #fff;
+    }
+    
+    h3 {
+      font-size: 1.5em;
+      color: #fff;
+    }
+    
+    /* Paragraph styling */
+    p {
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+    
+    /* General button styling (used for the About Me button and Pillar buttons) */
+    button, .habit-btn {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    button:hover, .habit-btn:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+    }
+    
+    /* Container for the Pillars buttons (in-page links) */
+    .habit-container {
+      margin-top: 20px;
+    }
+    
+    .habit-container .habit-btn {
+      margin: 5px;
+    }
+    
+    /* Project section styling */
+    .project img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 4px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease;
+    }
+    
+    a:hover {
+      border-bottom: 2px solid #3498db;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <!-- Stylus Icon as inline SVG -->
+        <a href="me.html">
+          <svg viewBox="0 0 512 512">
+            <path d="M497.9 74.1L437 13.2C423.5-0.3 404.3-0.3 390.8 13.2L213.1 190.9L321.1 298.9L498.8 121.2C513.3 106.7 513.3 87.5 497.9 74.1zM200.4 220.5L56 364.9V480H171.1L315.5 335.6L200.4 220.5z"/>
+          </svg>
+          Jesus Mariscal
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="me.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <a href="#">Pillars of My Foundation</a>
+          <div class="dropdown-content">
+            <a href="lifelong-learning.html">Lifelong Learning</a>
+            <a href="community-impact.html">Community Impact</a>
+            <a href="spiritual-reflection.html">Spiritual Reflection</a>
+            <a href="healthy-living.html">Healthy Living</a>
+            <a href="cultural-enrichment.html">Cultural Enrichment</a>
+            <a href="artistic-expression.html">Artistic Expression</a>
+            <a href="resilience.html">Resilience</a>
+            <a href="leadership.html">Leadership</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Introduction Section -->
+  <div class="container" id="intro">
+    <h1>Hello, my name is Jesus Mariscal</h1>
+    <h3>
+      I rise above hardship and transform every challenge into an opportunity for excellence.
+    </h3>
+    <button>About Me</button>
+  </div>
+  
+  <!-- Journey Section -->
+  <div class="container" id="journey">
+    <h1>A Bit About My Journey</h1>
+    <p>
+      I grew up facing real-life challenges that taught me resilience and grit. Coming from a humble background as an immigrant from Mexico, I learned early the value of hard work and determination. I earned my Bachelor's in Biological Sciences from UCI—making the Dean's List for five consecutive quarters—and gained valuable laboratory experience that led to excellence in research and even a publication. Beyond the lab, I scribed for a urologist and volunteered at UCI Medical Center. I was honored as Scribe of the Month in March 2020 and then became a Student Scribes Manager, coordinating activities for the Inland Empire and Orange County. My journey further evolved when I served as a superintendent under a general contracting company for AltaMed—overseeing the renovation and uplift of clinics in South LA, Anaheim, El Monte, and other communities. Today, as an Academic Director, I’m proud to lead, mentor, and create opportunities that empower the next generation.
+    </p>
+    <h1>Pillars of My Foundation</h1>
+    <div class="habit-container">
+      <a href="lifelong-learning.html" class="habit-btn">Lifelong Learning</a>
+      <a href="community-impact.html" class="habit-btn">Community Impact</a>
+      <a href="spiritual-reflection.html" class="habit-btn">Spiritual Reflection</a>
+      <a href="healthy-living.html" class="habit-btn">Healthy Living</a>
+      <a href="cultural-enrichment.html" class="habit-btn">Cultural Enrichment</a>
+      <a href="artistic-expression.html" class="habit-btn">Artistic Expression</a>
+      <a href="resilience.html" class="habit-btn">Resilience</a>
+      <a href="leadership.html" class="habit-btn">Leadership</a>
+    </div>
+  </div>
+  
+  <!-- Why Medicine Section -->
+  <div class="container" id="why-medicine">
+    <h1>Why Medicine</h1>
+    <p>
+      For me, true healing transcends the physical—it is a harmonious integration of body, mind, and spirit. Embracing the role of a medic for both the soul and body is not just a career, but a way of life. I believe that every challenge has prepared me to approach healing holistically, and my journey has been about transforming adversity into opportunities for compassionate care.
+    </p>
+  </div>
+  
+</body>
+</html>

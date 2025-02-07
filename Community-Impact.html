@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Impact - Jesus Mariscal</title>
+  <style>
+    /* Reset defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Base styling: modern dark gradient background with white text */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      padding-top: 70px; /* Space for fixed nav bar */
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(20, 30, 48, 0.9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    /* Logo with Stylus Icon */
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo svg {
+      width: 30px;
+      height: 30px;
+      fill: #3498db;
+      margin-right: 10px;
+    }
+    .logo a {
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+    }
+    /* Navigation links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1em;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #3498db;
+    }
+    /* Dropdown container for Pillars */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown > a::after {
+      content: " \25BE"; /* Down arrow */
+      font-size: 0.8em;
+      margin-left: 4px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: rgba(20, 30, 48, 0.95);
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      z-index: 1001;
+    }
+    .dropdown-content a {
+      color: #fff;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s ease;
+    }
+    .dropdown-content a:hover {
+      background: #3498db;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+      }
+      .nav-links {
+        margin-top: 10px;
+      }
+    }
+    /* Container Section Styling */
+    .container-section {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    /* Headings and Paragraphs */
+    h1, h3 {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #fff;
+    }
+    h3 {
+      font-size: 1.5em;
+      color: #fff;
+    }
+    p {
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+    /* Grid layout for images */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    /* Embedded PDF styling for the poster */
+    .pdf-embed {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-bottom: 20px;
+    }
+    /* Research paper link styling */
+    .paper-link {
+      display: inline-block;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .paper-link:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+    }
+    /* Text link styling for shoutouts */
+    .text-link {
+      color: #3498db;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+    .text-link:hover {
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="me.html">
+          <svg viewBox="0 0 512 512">
+            <path d="M497.9 74.1L437 13.2C423.5-0.3 404.3-0.3 390.8 13.2L213.1 190.9L321.1 298.9L498.8 121.2C513.3 106.7 513.3 87.5 497.9 74.1zM200.4 220.5L56 364.9V480H171.1L315.5 335.6L200.4 220.5z"/>
+          </svg>
+          Jesus Mariscal
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="me.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <a href="#">Pillars of My Foundation</a>
+          <div class="dropdown-content">
+            <a href="lifelong-learning.html">Lifelong Learning</a>
+            <a href="community-impact.html">Community Impact</a>
+            <a href="spiritual-reflection.html">Spiritual Reflection</a>
+            <a href="healthy-living.html">Healthy Living</a>
+            <a href="cultural-enrichment.html">Cultural Enrichment</a>
+            <a href="artistic-expression.html">Artistic Expression</a>
+            <a href="resilience.html">Resilience</a>
+            <a href="leadership.html">Leadership</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Community Impact Content Section -->
+  <div class="container-section" id="community-impact">
+    <h1>Community Impact</h1>
+    <p>
+      My commitment to community service has shaped my journey—from clinical engagement and volunteer work to leadership in student scribing and healthcare renovations.
+    </p>
+    
+    <!-- Clinical & Volunteer Engagement Section -->
+    <section class="content" id="clinical-volunteer">
+      <h2>Clinical & Volunteer Engagement</h2>
+      <p>
+        As a student scribe for Dr. Kar, I assisted with medical notes and the programming of electronic medical records, managing 7–14 patients a day. I observed in vivo procedures and translated in Spanish to connect with diverse populations. Volunteering at UCI Medical Center further enriched my understanding of community health.
+      </p>
+      <p>
+        For more details, visit 
+        <a href="https://sunkimurology.com/about/ashok-j-kar-md/" target="_blank" class="text-link">Dr. Kar's Profile</a>.
+      </p>
+    </section>
+    
+    <!-- Student Scribes Leadership Section -->
+    <section class="content" id="scribes-leadership">
+      <h2>Student Scribes Leadership</h2>
+      <p>
+        I was honored as Scribe of the Month in March 2020 and then became a Student Scribes Manager, coordinating activities for the Inland Empire and Orange County. This role allowed me to mentor fellow students and streamline clinical documentation.
+      </p>
+      <img src="student-scribe.png" alt="Student Scribe Recognition" style="max-width:100%; border-radius:8px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); margin-bottom:20px;">
+      <p>
+        For more details on the recognition, visit 
+        <a href="https://www.studentscribes.org/scribe-of-the-month" target="_blank" class="text-link">Student Scribes</a>.
+      </p>
+    </section>
+    
+    <!-- Superintendent for Healthcare Renovations Section -->
+    <section class="content" id="renovation">
+      <h2>Superintendent for Healthcare Renovations</h2>
+      <p>
+        As a superintendent under a general contracting company for AltaMed, I led renovations and improvements across multiple healthcare facilities. Our work included upgrading patient care rooms, reception areas, entire floors dedicated to dental services, and mobile dental units. This role required effective collaboration among electricians, plumbers, carpenters, and other professionals to deliver quality healthcare environments. For further details, visit 
+        <a href="https://www.altamed.org/PACE" target="_blank" class="text-link">AltaMed PACE</a>.
+      </p>
+    </section>
+    
+    <!-- Closing Reflection Section -->
+    <section class="content" id="reflection">
+      <h2>Impact in Action</h2>
+      <p>
+        These experiences—from clinical engagement and volunteer work to leadership in student scribing and healthcare renovations—demonstrate my commitment to making a lasting impact on my community through compassion, dedication, and effective collaboration.
+      </p>
+    </section>
+  </div>
+</body>
+</html>

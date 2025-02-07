@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Living - Jesus Mariscal</title>
+  <style>
+    /* Reset defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Base styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      padding-top: 70px; /* Space for fixed nav bar */
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(20, 30, 48, 0.9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo svg {
+      width: 30px;
+      height: 30px;
+      fill: #3498db;
+      margin-right: 10px;
+    }
+    .logo a {
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1em;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #3498db;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown > a::after {
+      content: " \25BE"; /* Down arrow */
+      font-size: 0.8em;
+      margin-left: 4px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: rgba(20, 30, 48, 0.95);
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      z-index: 1001;
+    }
+    .dropdown-content a {
+      color: #fff;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s ease;
+    }
+    .dropdown-content a:hover {
+      background: #3498db;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+      }
+      .nav-links {
+        margin-top: 10px;
+      }
+    }
+    /* Container Section Styling */
+    .container-section {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    /* Headings and Paragraphs */
+    h1, h2, h3 {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #fff;
+    }
+    h2 {
+      font-size: 1.8em;
+      color: #3498db;
+    }
+    h3 {
+      font-size: 1.5em;
+      color: #fff;
+    }
+    p {
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+    /* Image styling */
+    .image-full {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="me.html">
+            <svg viewBox="0 0 512 512">
+              <path d="M497.9 74.1L437 13.2C423.5-0.3 404.3-0.3 390.8 13.2L213.1 190.9L321.1 298.9L498.8 121.2C513.3 106.7 513.3 87.5 497.9 74.1zM200.4 220.5L56 364.9V480H171.1L315.5 335.6L200.4 220.5z"/>
+            </svg>
+            Jesus Mariscal
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="me.html">Home</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">About</a>
+          <div class="dropdown">
+            <a href="#">Pillars of My Foundation</a>
+            <div class="dropdown-content">
+              <a href="lifelong-learning.html">Lifelong Learning</a>
+              <a href="community-impact.html">Community Impact</a>
+              <a href="spiritual-reflection.html">Spiritual Reflection</a>
+              <a href="healthy-living.html">Healthy Living</a>
+              <a href="cultural-enrichment.html">Cultural Enrichment</a>
+              <a href="artistic-expression.html">Artistic Expression</a>
+              <a href="resilience.html">Resilience</a>
+              <a href="leadership.html">Leadership</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Healthy Living Page Heading -->
+    <div class="container-section" id="healthy-living">
+      <h1>Healthy Living</h1>
+      <p>
+        Embracing a dynamic and balanced lifestyle that fuels my adventures and inspires those around me.
+      </p>
+    </div>
+    
+    <!-- Section 1: Paddle Boarding -->
+    <div class="container-section" id="paddle-boarding">
+      <h2>Paddle Boarding</h2>
+      <p>
+        Experiencing the serenity of water and the thrill of paddle boarding rejuvenates both body and spirit. It’s a refreshing start to my day and a vital part of my healthy living journey.
+      </p>
+      <img src="outdoors.jpg" alt="Paddle Boarding" class="image-full">
+    </div>
+    
+    <!-- Section 2: Hiking Adventures -->
+    <div class="container-section" id="hiking">
+      <h2>Hiking Adventures</h2>
+      <p>
+        I challenge myself on rugged trails, embracing nature’s majesty and pushing my limits during hikes. Each climb and every breathtaking view is a reminder of nature’s enduring strength.
+      </p>
+      <img src="flag.jpg" alt="Cliff Hike with American Flag" class="image-full">
+    </div>
+    
+    <!-- Section 3: Soccer & Family -->
+    <div class="container-section" id="soccer">
+      <h2>Soccer & Family</h2>
+      <p>
+        Soccer is more than a sport—it's a celebration of teamwork and passion. Sharing these moments with my father in a vibrant stadium reflects the joy of sport and family unity.
+      </p>
+      <img src="Mexico.jpg" alt="Soccer Match with Father" class="image-full">
+    </div>
+  </div>
+</body>
+</html>
